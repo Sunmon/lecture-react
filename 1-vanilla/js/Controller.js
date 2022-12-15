@@ -1,9 +1,12 @@
 const tag = "[Controller]";
 
 export default class Controller {
-  constructor(store, views) {
-    this.store = store;
+  constructor(store, { searchFormView }) {
+    console.log(tag);
 
+    this.store = store;
     // TODO
+
+    this.searchFormView = searchFormView;
   }
 }
